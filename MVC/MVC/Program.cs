@@ -9,9 +9,9 @@ using (var context = new MyContext())
     // Create and save a new Students
     Console.WriteLine("Adding new students");
 
-    context.Database.ExecuteSqlCommand("GRANT ALTER, UPDATE, DELETE, INSERT ON Mycontext.dbo.students TO [DELL]");
-    //context.Database.ExecuteSqlCommand("GRANT ALTER, UPDATE, DELETE, INSERT ON Mycontext.dbo.COURSES TO [DESKTOP-BRJG684]");
-    //context.Database.ExecuteSqlCommand("GRANT ALTER, UPDATE, DELETE, INSERT ON Mycontext.dbo.enrollments TO [DESKTOP-BRJG684]");
+    context.Database.ExecuteSqlCommand("GRANT ALTER, UPDATE, DELETE, INSERT ON Mycontext.dbo.students TO [DESKTOP-BRJG684]");
+    context.Database.ExecuteSqlCommand("GRANT ALTER, UPDATE, DELETE, INSERT ON Mycontext.dbo.COURSES TO [DESKTOP-BRJG684]");
+    context.Database.ExecuteSqlCommand("GRANT ALTER, UPDATE, DELETE, INSERT ON Mycontext.dbo.enrollments TO [DESKTOP-BRJG684]");
 
 
     var student = new Student
